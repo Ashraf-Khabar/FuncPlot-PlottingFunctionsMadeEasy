@@ -1,7 +1,5 @@
 # FuncPlot
 
-![FuncPlot logo](https://i.imgur.com/a/abcdefghijklmnopqrstuvwxyz.png)
-
 FuncPlot is a user-friendly app built with [Kivy](https://kivy.org/) and [KivyMD](https://kivymd.readthedocs.io/) that allows you to easily plot and visualize mathematical functions on your desktop or mobile device. With its intuitive interface and support for multiple functions, FuncPlot makes it easy to explore and understand complex mathematical concepts.
 
 ### Features
@@ -11,7 +9,6 @@ FuncPlot is a user-friendly app built with [Kivy](https://kivy.org/) and [KivyMD
 - Zoom and pan functionality for precise visualization
 
 ### Screenshots
-![FuncPlot Screenshot](https://i.imgur.com/a/abcdefghijklmnopqrstuvwxyz.png)
 
 ### Installation
 FuncPlot requires Python 3.7 or higher to run. To install the necessary dependencies, run the following command:
