@@ -10,9 +10,25 @@ FuncPlot is a user-friendly app built with [Kivy](https://kivy.org/) and [KivyMD
 - Customizable color and line style for each function
 - Zoom and pan functionality for precise visualization
 
-### Screenshots
+## Requirements
+- Python 3
+- kivy, kivyMD
+- numpy
 
 ### Installation
 FuncPlot requires Python 3.7 or higher to run. To install the necessary dependencies, run the following command:
 ```bash
-pip install kivy kivymd
+pip install kivy
+pip install kivymd
+pip install numpy
+```
+## Usage
+1. Run the app by executing `python main.py`
+3. Feel free on clcking on buttons of functions to visualize the ploting on the screen
+4. You can link this app with a database and store the historic of all plots
+
+## Contribution
+Feel free to fork this repository and make contributions.
+
+## License
+This project is licensed under the [MIT License](https://opensource.org/licenses/MIT)
