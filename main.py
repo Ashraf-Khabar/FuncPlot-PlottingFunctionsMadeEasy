@@ -7,7 +7,7 @@ from kivymd.theming import ThemeManager
 from kivymd.uix.button import MDFlatButton
 from kivy_garden.graph import Graph, MeshLinePlot
 import numpy as np
-from MathFunctions import plot_sine, plot_exp, plot_sqrt, plot_cosine
+from MathFunctions import plot_sine, plot_exp, plot_sqrt, plot_cosine, plot_ln
 from kivymd.uix.menu import MDDropdownMenu
 
 
@@ -18,7 +18,7 @@ class PlotWidget(Screen):
         self.graph = Graph(xlabel='X', ylabel='Y', x_ticks_minor=5,
                            x_ticks_major=25, y_ticks_major=1,
                            y_grid_label=True, x_grid_label=True, padding=5,
-                           x_grid=True, y_grid=True, xmin=-1, xmax=15, ymin=-1, ymax=10,
+                           x_grid=True, y_grid=True, xmin=-1, xmax=10, ymin=-8, ymax=8,
                            size_hint=(.8, .8), pos_hint={'center_x': .5, 'center_y': .5},
                            font_size='14sp',
                            background_color=[0, 0, 0, 1])
@@ -34,6 +34,8 @@ class PlotWidget(Screen):
         button_layout.add_widget(self.exp_button)
         self.sqrt_button = MDFlatButton(text='sqrt', on_press=self.plot_sqrt)
         button_layout.add_widget(self.sqrt_button)
+        self.ln_button = MDFlatButton(text='ln', on_press=self.plot_ln)
+        button_layout.add_widget(self.ln_button)
 
         self.add_widget(button_layout)
 
@@ -55,6 +57,9 @@ class PlotWidget(Screen):
 
     def plot_sqrt(self, *args):
         plot_sqrt(self)
+
+    def plot_ln(self, *args):
+        plot_ln(self)
 
     def clear_plots(self, *args):
         for plot in self.graph.plots:
